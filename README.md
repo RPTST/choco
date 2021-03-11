@@ -9,7 +9,7 @@ With PowerShell, you must ensure Get-ExecutionPolicy is not Restricted. We sugge
 
 Now run the following command:
 
->Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 Paste the copied text into your shell and press Enter.
 Wait a few seconds for the command to complete.
@@ -19,6 +19,6 @@ If you don't see any errors, you are ready to use Chocolatey! Type choco or choc
 
 To install Chocolatey GUI, run the following command from the command line or from PowerShell:
 
-> choco install chocolateygui
+    choco install chocolateygui
 
 Your done!
