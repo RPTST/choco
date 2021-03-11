@@ -5,7 +5,15 @@ NOTE: Please inspect https://chocolatey.org/install.ps1 prior to running any of 
 
 With PowerShell, you must ensure Get-ExecutionPolicy is not Restricted. We suggest using Bypass to bypass the policy to get things installed or AllSigned for quite a bit more security.
 
-    Run Get-ExecutionPolicy. If it returns Restricted, then run Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process.
+    Run Get-ExecutionPolicy. 
+
+If it returns Restricted, then run 
+    
+    Set-ExecutionPolicy AllSigned 
+
+or 
+    
+    Set-ExecutionPolicy Bypass -Scope Process.
 
 Now run the following command:
 
