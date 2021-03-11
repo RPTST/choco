@@ -7,7 +7,7 @@ With PowerShell, you must ensure Get-ExecutionPolicy is not Restricted. We sugge
 
 Run:
     
-    Get-ExecutionPolicy. 
+    Get-ExecutionPolicy
 
 If it returns Restricted, then run 
     
@@ -15,7 +15,7 @@ If it returns Restricted, then run
 
 or 
     
-    Set-ExecutionPolicy Bypass -Scope Process.
+    Set-ExecutionPolicy Bypass -Scope Process
 
 Now run the following command:
 
